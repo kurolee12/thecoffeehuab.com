@@ -1,0 +1,690 @@
++<!DOCTYPE html>
++
++<html lang="vi"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&amp;display=swap" rel="stylesheet"/>
++<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"surface-dim":"#e2d8d3","tertiary-fixed":"#ffdcc3","surface-container-lowest":"#ffffff","tertiary-container":"#532a00","background":"#fff8f5","status-table-free":"#15803D","on-surface":"#1f1b18","secondary-container":"#fe8440","on-primary-fixed":"#2d1603","on-tertiary-fixed":"#2f1500","surface-container":"#f6ece6","outline":"#82746c","on-primary-fixed-variant":"#5f4029","surface-container-highest":"#eae1db","on-tertiary":"#ffffff","parchment-canvas":"#F9F8F6","on-surface-variant":"#50453d","on-secondary-container":"#672800","secondary":"#9f4200","primary-fixed-dim":"#eabe9f","inverse-surface":"#342f2c","surface-container-low":"#fcf2ec","surface-pure":"#FFFFFF","inverse-primary":"#eabe9f","surface-variant":"#eae1db","on-tertiary-container":"#e9831a","status-table-occupied":"#B91C1C","on-secondary-fixed":"#341100","secondary-fixed":"#ffdbcb","primary-container":"#4a2e18","on-tertiary-fixed-variant":"#6e3900","inverse-on-surface":"#f9efe9","tertiary-fixed-dim":"#ffb77d","outline-variant":"#d4c3ba","espresso-deep":"#2B1810","status-table-pending":"#D97706","surface":"#fff8f5","surface-container-high":"#f0e6e1","surface-tint":"#79573e","on-primary":"#ffffff","on-secondary-fixed-variant":"#7a3000","on-error-container":"#93000a","on-primary-container":"#bd9578","primary":"#311906","error-container":"#ffdad6","status-table-printed":"#7E22CE","error":"#ba1a1a","primary-fixed":"#ffdcc4","surface-bright":"#fff8f5","on-error":"#ffffff","tertiary":"#341800","on-background":"#1f1b18","on-secondary":"#ffffff","surface-card":"#F3EDE4","secondary-fixed-dim":"#ffb692"},borderRadius:{DEFAULT:"0.25rem",lg:"0.5rem",xl:"0.75rem",full:"9999px"},spacing:{"space-lg":"1rem",gutter:"1rem","space-xs":"0.25rem","margin-mobile":"0.75rem","gutter-mobile":"0.75rem","space-sm":"0.5rem","space-md":"0.75rem","space-xl":"1.5rem",margin:"1.25rem","space-2xl":"2rem"},fontFamily:{"body-md":["Plus Jakarta Sans"],"display-lg":["Plus Jakarta Sans"],"label-lg":["Plus Jakarta Sans"],"title-lg":["Plus Jakarta Sans"],"title-md":["Plus Jakarta Sans"],"headline-md":["Plus Jakarta Sans"],"display-lg-mobile":["Plus Jakarta Sans"],"label-sm":["Plus Jakarta Sans"],"body-lg":["Plus Jakarta Sans"],"label-md":["Plus Jakarta Sans"],"headline-lg":["Plus Jakarta Sans"],"headline-sm":["Plus Jakarta Sans"],"numeral-total":["Plus Jakarta Sans"],"body-sm":["Plus Jakarta Sans"]},fontSize:{"body-md":["14px",{lineHeight:"20px",fontWeight:"400"}],"display-lg":["32px",{lineHeight:"40px",letterSpacing:"-0.02em",fontWeight:"800"}],"label-lg":["14px",{lineHeight:"20px",fontWeight:"600"}],"title-lg":["16px",{lineHeight:"24px",fontWeight:"700"}],"title-md":["15px",{lineHeight:"22px",fontWeight:"600"}],"headline-md":["20px",{lineHeight:"28px",fontWeight:"700"}],"display-lg-mobile":["26px",{lineHeight:"34px",letterSpacing:"-0.01em",fontWeight:"800"}],"label-sm":["11px",{lineHeight:"14px",letterSpacing:"0.04em",fontWeight:"700"}],"body-lg":["16px",{lineHeight:"24px",fontWeight:"400"}],"label-md":["12px",{lineHeight:"16px",letterSpacing:"0.02em",fontWeight:"600"}],"headline-lg":["24px",{lineHeight:"32px",letterSpacing:"-0.01em",fontWeight:"700"}],"headline-sm":["18px",{lineHeight:"26px",fontWeight:"600"}],"numeral-total":["28px",{lineHeight:"36px",letterSpacing:"-0.02em",fontWeight:"800"}],"body-sm":["13px",{lineHeight:"18px",fontWeight:"400"}]}}}}</script></head><body class="bg-background font-body-md text-on-surface"><header class="fixed top-0 left-0 right-0 z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(43,24,16,0.06)]"><div class="h-16 w-full px-margin flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md"><img alt="Robusta Cáº©m Lá»‡ POS Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1UNIKyiX5LbKWV92cic0UZmPkLrTTL277pP3mIkEAiD_cX8_62KcpRS03GL0Fbasbcospx8HFvPBZCIXQkozmsn-CQavPAlEuaRqIpJbtLKawDxTAWfJDpfjPhEIFG64imJ3pz_p4fVSHSK2qTLSO6tzAUSg2itYaZH8T1LaoigVavjBzbRfs8hjJtbbrUU5fa-eBnfi_lBQKX2iEpA3FNX3CO7z7zOE_RWRn2S-LBXCjslUEKzA46Aew"/><div class="flex flex-col"><span class="font-title-md text-title-md text-primary tracking-tight uppercase">Robusta Cáº©m Lá»‡ POS</span><span class="font-label-sm text-label-sm text-on-surface-variant">Chi nhÃ¡nh: HÃ²a XuÃ¢n, Cáº©m Lá»‡</span></div></div><div class="hidden xl:flex items-center gap-space-md bg-surface-container px-space-md py-space-xs rounded-lg"><div class="flex items-center gap-space-xs"><span class="w-2.5 h-2.5 rounded-full bg-status-table-free animate-pulse"></span><span class="font-label-sm text-label-sm text-on-surface">Local Sync â€¢ Sáºµn sÃ ng Offline</span></div><span class="text-outline-variant font-label-sm">|</span><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-title-md text-status-table-free">print</span><span class="font-label-sm text-label-sm text-on-surface">MÃ¡y in LAN OK</span></div><span class="text-outline-variant font-label-sm">|</span><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-title-md text-secondary">schedule</span><span class="font-label-sm text-label-sm text-on-surface-variant font-bold">Ca SÃ¡ng (06:30 - 14:00)</span></div></div><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-sm pl-space-sm"><div class="text-right hidden sm:block"><div class="font-label-lg text-label-lg text-on-surface leading-tight">Mai Linh</div><div class="font-label-sm text-label-sm text-secondary font-bold">Thu ngÃ¢n chÃ­nh</div></div><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCxSgah5q9pyxtmSKvLAkOQjb8bQNytBS-nYP2Aq-ut8LcilgAj0hAqb0w9zbk4MiL6cUznanxw_ei0N9BrhsVhbbE7LfuyPJc6lWMRmmbw3t8FzEkhjwfrrX7rwVgiBkERsQLpNbWQJDSthpqV8a7qtO_N81oRNFuaASqLevavXlxHKS78DW3fuTJZry_Z2gkgsalOThDL-Qy1Zc1jqsqfb58mlD0pRPZFIj2Ao-SG2OBTa3LWIluf"/></div></div></div></header><aside class="fixed left-0 top-16 bottom-0 w-64 bg-surface-container-low z-40 flex flex-col justify-between py-space-md shadow-[0_1px_8px_rgba(43,24,16,0.04)]"><div class="flex flex-col gap-space-xs px-space-sm"><div class="px-space-md py-space-xs font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">BÃ n LÃ m Viá»‡c POS</div><nav class="flex flex-col gap-space-xs" data-active-classes="bg-primary-container text-on-primary font-title-md rounded-xl shadow-[0_4px_12px_rgba(43,24,16,0.08)]"><a class="flex items-center gap-space-md px-space-md py-space-md rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="ban-hang-thu-ngan" href="#"><span class="material-symbols-outlined">point_of_sale</span>BÃ¡n HÃ ng / Thu NgÃ¢n</a><a class="flex items-center gap-space-md px-space-md py-space-md rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="so-do-ban" href="#"><span class="material-symbols-outlined">table_restaurant</span>SÆ¡ Äá»“ BÃ n</a><a class="flex items-center gap-space-md px-space-md py-space-md rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="man-hinh-barista-kds" href="#"><span class="material-symbols-outlined">coffee_maker</span>MÃ n HÃ¬nh Barista (KDS)</a><a class="flex items-center gap-space-md px-space-md py-space-md rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="kho-dinh-luong-recipe" href="#"><span class="material-symbols-outlined">inventory_2</span>Kho &amp; Äá»‹nh LÆ°á»£ng Recipe</a><a class="flex items-center gap-space-md px-space-md py-space-md rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="bao-cao-doanh-thu" href="#"><span class="material-symbols-outlined">monitoring</span>BÃ¡o CÃ¡o Doanh Thu</a></nav></div><div class="px-space-md flex flex-col gap-space-xs"><div class="bg-surface-container p-space-sm rounded-lg flex items-center justify-between"><span class="font-label-sm text-label-sm text-on-surface-variant">Cháº¿ Ä‘á»™ hoáº¡t Ä‘á»™ng</span><span class="font-label-sm text-label-sm text-status-table-free font-bold">Cáº£m á»¨ng POS</span></div><div class="text-center font-label-sm text-label-sm text-outline">Â© 2024 Robusta Cáº©m Lá»‡</div></div></aside><div class="pl-64"><main class="w-full pt-16 bg-background min-h-screen"><div class="flex flex-col w-full p-margin gap-space-xl">
++<!-- Top Stat / Alert Banners -->
++<div class="flex flex-col gap-space-sm">
++<div class="flex flex-wrap items-center justify-between gap-space-sm">
++<div class="flex flex-col">
++<span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest">Kho Pha Cháº¿ &amp; CÃ´ng Thá»©c Barista</span>
++<h1 class="font-headline-lg text-headline-lg text-espresso-deep tracking-tight">Quáº£n LÃ½ Tá»“n Kho &amp; Äá»‹nh LÆ°á»£ng Recipe</h1>
++</div>
++<div class="flex items-center gap-space-sm">
++<button class="flex items-center gap-space-xs px-space-md py-space-sm rounded-xl bg-surface-container-high text-espresso-deep font-label-lg text-label-lg shadow-sm hover:bg-surface-dim transition-all" id="btn-quick-audit">
++<span class="material-symbols-outlined text-title-md">history_edu</span>
++          Kiá»ƒm KÃª Nhanh Ca Hiá»‡n Táº¡i
++        </button>
++<button class="flex items-center gap-space-xs px-space-md py-space-sm rounded-xl bg-primary text-on-primary font-label-lg text-label-lg shadow-md hover:bg-primary-container transition-all" id="btn-create-po-top">
++<span class="material-symbols-outlined text-title-md">add_shopping_cart</span>
++          Láº­p Phiáº¿u Nháº­p Kho
++        </button>
++</div>
++</div>
++<!-- Alert Cards Horizontal Scroll/Grid -->
++<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-space-md mt-space-xs">
++<!-- Card 1: Critical Red -->
++<div class="relative overflow-hidden rounded-xl bg-error-container/30 p-space-md flex flex-col justify-between shadow-sm">
++<div class="flex items-start justify-between gap-space-xs">
++<div class="flex items-center gap-space-xs">
++<span class="w-2.5 h-2.5 rounded-full bg-status-table-occupied animate-ping"></span>
++<span class="font-label-sm text-label-sm uppercase text-status-table-occupied tracking-wider font-bold">Nguy cáº¥p</span>
++</div>
++<span class="material-symbols-outlined text-status-table-occupied">warning</span>
++</div>
++<div class="mt-space-sm">
++<div class="font-title-lg text-title-lg text-espresso-deep leading-snug">Sá»¯a Ä‘áº·c Ã”ng Thá»</div>
++<div class="flex items-baseline gap-space-xs mt-space-xs">
++<span class="font-numeral-total text-numeral-total text-status-table-occupied">3</span>
++<span class="font-body-md text-body-md text-on-surface-variant font-semibold">/ Tá»‘i thiá»ƒu: 5 há»™p</span>
++</div>
++<p class="font-body-sm text-body-sm text-status-table-occupied mt-space-xs">Thiáº¿u há»¥t tráº§m trá»ng cho ca tá»‘i!</p>
++</div>
++<div class="mt-space-md pt-space-xs">
++<button class="w-full flex items-center justify-center gap-space-xs py-space-xs px-space-sm bg-status-table-occupied text-on-primary rounded-lg font-label-sm text-label-sm tracking-wide shadow-sm hover:opacity-95 transition-all" onclick="openImportModal('NL-002', 'Sá»¯a Ä‘áº·c Ã”ng Thá» 380g', 24)">
++<span class="material-symbols-outlined text-body-sm">shopping_bag</span>
++            Táº¡o ÄÆ¡n Nháº­p HÃ ng
++          </button>
++</div>
++</div>
++<!-- Card 2: Warning Amber -->
++<div class="relative overflow-hidden rounded-xl bg-status-table-pending/10 p-space-md flex flex-col justify-between shadow-sm">
++<div class="flex items-start justify-between gap-space-xs">
++<div class="flex items-center gap-space-xs">
++<span class="w-2.5 h-2.5 rounded-full bg-status-table-pending"></span>
++<span class="font-label-sm text-label-sm uppercase text-status-table-pending tracking-wider font-bold">Cáº£nh bÃ¡o</span>
++</div>
++<span class="material-symbols-outlined text-status-table-pending">low_priority</span>
++</div>
++<div class="mt-space-sm">
++<div class="font-title-lg text-title-lg text-espresso-deep leading-snug">Háº¡t Robusta Cáº©m Lá»‡ (Rang Má»™c)</div>
++<div class="flex items-baseline gap-space-xs mt-space-xs">
++<span class="font-numeral-total text-numeral-total text-status-table-pending">2.8</span>
++<span class="font-body-md text-body-md text-on-surface-variant font-semibold">kg / NgÆ°á»¡ng: 5.0kg</span>
++</div>
++<p class="font-body-sm text-body-sm text-on-surface-variant mt-space-xs">Dá»± kiáº¿n háº¿t trong 18 giá» tá»›i</p>
++</div>
++<div class="mt-space-md pt-space-xs">
++<div class="w-full bg-surface-container-highest rounded-full h-2">
++<div class="bg-status-table-pending h-2 rounded-full" style="width: 56%;"></div>
++</div>
++</div>
++</div>
++<!-- Card 3: Safe Green -->
++<div class="relative overflow-hidden rounded-xl bg-surface-container-low p-space-md flex flex-col justify-between shadow-sm">
++<div class="flex items-start justify-between gap-space-xs">
++<div class="flex items-center gap-space-xs">
++<span class="w-2.5 h-2.5 rounded-full bg-status-table-free"></span>
++<span class="font-label-sm text-label-sm uppercase text-status-table-free tracking-wider font-bold">Tá»“n Äáº§y Äá»§</span>
++</div>
++<span class="material-symbols-outlined text-status-table-free">task_alt</span>
++</div>
++<div class="mt-space-sm">
++<div class="font-title-lg text-title-lg text-espresso-deep leading-snug">TrÃ  Oolong Má»™c ChÃ¢u</div>
++<div class="flex items-baseline gap-space-xs mt-space-xs">
++<span class="font-numeral-total text-numeral-total text-espresso-deep">8.5</span>
++<span class="font-body-md text-body-md text-on-surface-variant font-semibold">kg / Má»©c an toÃ n: 3.0kg</span>
++</div>
++<p class="font-body-sm text-body-sm text-status-table-free mt-space-xs">Äáº¡t 283% Ä‘á»‹nh má»©c tá»‘i thiá»ƒu</p>
++</div>
++<div class="mt-space-md pt-space-xs">
++<div class="w-full bg-surface-container-highest rounded-full h-2">
++<div class="bg-status-table-free h-2 rounded-full" style="width: 90%;"></div>
++</div>
++</div>
++</div>
++<!-- Card 4: Safe Green -->
++<div class="relative overflow-hidden rounded-xl bg-surface-container-low p-space-md flex flex-col justify-between shadow-sm">
++<div class="flex items-start justify-between gap-space-xs">
++<div class="flex items-center gap-space-xs">
++<span class="w-2.5 h-2.5 rounded-full bg-status-table-free"></span>
++<span class="font-label-sm text-label-sm uppercase text-status-table-free tracking-wider font-bold">Tá»“n á»”n Äá»‹nh</span>
++</div>
++<span class="material-symbols-outlined text-status-table-free">inventory</span>
++</div>
++<div class="mt-space-sm">
++<div class="font-title-lg text-title-lg text-espresso-deep leading-snug">Kem BÃ©o Thá»±c Váº­t Rich's</div>
++<div class="flex items-baseline gap-space-xs mt-space-xs">
++<span class="font-numeral-total text-numeral-total text-espresso-deep">12</span>
++<span class="font-body-md text-body-md text-on-surface-variant font-semibold">há»™p / Má»©c an toÃ n: 6 há»™p</span>
++</div>
++<p class="font-body-sm text-body-sm text-status-table-free mt-space-xs">Äá»§ phá»¥c vá»¥ 3-4 ngÃ y tá»›i</p>
++</div>
++<div class="mt-space-md pt-space-xs">
++<div class="w-full bg-surface-container-highest rounded-full h-2">
++<div class="bg-status-table-free h-2 rounded-full" style="width: 78%;"></div>
++</div>
++</div>
++</div>
++</div>
++</div>
++<!-- Bento Grid: Recipe Spotlight & Main Inventory Table -->
++<div class="grid grid-cols-1 xl:grid-cols-12 gap-space-lg items-start">
++<!-- LEFT / Recipe Breakdown Spotlight (4 cols) -->
++<div class="xl:col-span-4 flex flex-col gap-space-md">
++<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col gap-space-md">
++<div class="flex items-center justify-between">
++<div class="flex items-center gap-space-xs">
++<span class="material-symbols-outlined text-secondary">menu_book</span>
++<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-bold">Recipe Tá»± Äá»™ng Trá»« Kho</span>
++</div>
++<span class="px-space-xs py-0.5 rounded bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm font-bold">MÃ³n BÃ¡n Cháº¡y</span>
++</div>
++<div class="flex flex-col gap-space-xs">
++<h2 class="font-headline-md text-headline-md text-espresso-deep">CÃ  PhÃª Phin Sá»¯a Cáº©m Lá»‡</h2>
++<p class="font-body-sm text-body-sm text-on-surface-variant">Kháº¥u trá»« tá»± Ä‘á»™ng vÃ o dá»¯ liá»‡u tá»“n thá»±c táº¿ ngay khi mÃ¡y POS in order thu ngÃ¢n.</p>
++</div>
++<!-- Recipe Visual Specs -->
++<div class="relative overflow-hidden rounded-xl h-44 bg-surface-container flex items-center justify-center">
++<img class="w-full h-full object-cover" data-alt="Traditional Vietnamese Phin filter brewing over a glass with thick condensed milk layer, roasted robusta beans scattered around on wooden table, warm artisanal coffee shop ambiance with soft morning sunlight in Da Nang" src="https://lh3.googleusercontent.com/aida-public/AB6AXuApe8gKyFa88iFy63QCTmH85cDeSUzm5EYH_1_Fp4sigik34r_zn8DfMlg4A0aNCvDKZHkduKX6xYVM2WMgSDHSwpTNL6rQl1YhsWPhIG4xh-wNyP4Cp5bPFGwoSoaIvlDEUMPgVK75pYFk37aB_VvkiqFuGRB6YBF4FPVxG871xDtCaCzGaHAu1qcyEEiPp9UOezvghQAvGAfACUkJZ1a_dvMU3rfg2YmVny8wBcDG_EkLK-NBiNLw"/>
++<div class="absolute inset-0 bg-gradient-to-t from-espresso-deep/80 via-espresso-deep/20 to-transparent flex flex-col justify-end p-space-md text-on-primary">
++<span class="font-label-sm text-label-sm text-primary-fixed-dim uppercase">Äá»‹nh chuáº©n 1 ly tiÃªu chuáº©n</span>
++<span class="font-title-md text-title-md">CÃ  phÃª phin truyá»n thá»‘ng 55ml chiáº¿t xuáº¥t</span>
++</div>
++</div>
++<!-- Cost Breakdown Table -->
++<div class="flex flex-col gap-space-xs">
++<div class="font-label-sm text-label-sm uppercase tracking-wide text-on-surface-variant mb-space-xs">ThÃ nh Pháº§n &amp; GiÃ¡ Vá»‘n (BOM)</div>
++<div class="flex items-center justify-between p-space-sm rounded-lg bg-surface-container-low hover:bg-surface-container transition-colors">
++<div class="flex items-center gap-space-sm min-w-0">
++<span class="w-2 h-2 rounded-full bg-primary-container flex-shrink-0"></span>
++<div class="truncate">
++<div class="font-title-md text-title-md text-espresso-deep truncate">25g Robusta Cáº©m Lá»‡ xay</div>
++<div class="font-body-sm text-body-sm text-on-surface-variant">Rang má»™c má»©c vá»«a (Medium Dark)</div>
++</div>
++</div>
++<div class="text-right flex-shrink-0 pl-space-xs">
++<div class="font-title-md text-title-md text-espresso-deep">4.250Ä‘</div>
++<div class="font-label-sm text-label-sm text-outline">170Ä‘/g</div>
++</div>
++</div>
++<div class="flex items-center justify-between p-space-sm rounded-lg bg-surface-container-low hover:bg-surface-container transition-colors">
++<div class="flex items-center gap-space-sm min-w-0">
++<span class="w-2 h-2 rounded-full bg-secondary-container flex-shrink-0"></span>
++<div class="truncate">
++<div class="font-title-md text-title-md text-espresso-deep truncate">30ml Sá»¯a Äáº·c CÃ³ ÄÆ°á»ng</div>
++<div class="font-body-sm text-body-sm text-on-surface-variant">Sá»¯a Ä‘áº·c Ã”ng Thá» nhÃ£n xanh</div>
++</div>
++</div>
++<div class="text-right flex-shrink-0 pl-space-xs">
++<div class="font-title-md text-title-md text-espresso-deep">1.800Ä‘</div>
++<div class="font-label-sm text-label-sm text-outline">60Ä‘/ml</div>
++</div>
++</div>
++<div class="flex items-center justify-between p-space-sm rounded-lg bg-surface-container-low hover:bg-surface-container transition-colors">
++<div class="flex items-center gap-space-sm min-w-0">
++<span class="w-2 h-2 rounded-full bg-outline-variant flex-shrink-0"></span>
++<div class="truncate">
++<div class="font-title-md text-title-md text-espresso-deep truncate">Bao BÃ¬ &amp; Ly ThÃ nh Pháº©m</div>
++<div class="font-body-sm text-body-sm text-on-surface-variant">Ly giáº¥y + náº¯p / Ly thá»§y tinh</div>
++</div>
++</div>
++<div class="text-right flex-shrink-0 pl-space-xs">
++<div class="font-title-md text-title-md text-espresso-deep">1.200Ä‘</div>
++<div class="font-label-sm text-label-sm text-outline">Quy cÃ¡ch Ä‘Ã³ng gÃ³i</div>
++</div>
++</div>
++</div>
++<!-- Profit Margin Bento Widget -->
++<div class="rounded-xl bg-surface-card p-space-md flex flex-col gap-space-sm">
++<div class="flex items-center justify-between">
++<span class="font-body-sm text-body-sm text-on-surface-variant">Tá»•ng chi phÃ­ nguyÃªn liá»‡u (Cost):</span>
++<span class="font-title-lg text-title-lg text-espresso-deep">7.250Ä‘</span>
++</div>
++<div class="flex items-center justify-between">
++<span class="font-body-sm text-body-sm text-on-surface-variant">GiÃ¡ niÃªm yáº¿t thu ngÃ¢n:</span>
++<span class="font-headline-sm text-headline-sm text-secondary font-bold">25.000Ä‘</span>
++</div>
++<!-- Profit progress bar -->
++<div class="pt-space-xs">
++<div class="flex items-center justify-between text-label-sm font-label-sm mb-1">
++<span class="text-status-table-free font-bold">BiÃªn Lá»£i Nhuáº­n Gá»™p (Margin)</span>
++<span class="text-status-table-free font-bold">71.0%</span>
++</div>
++<div class="w-full bg-surface-dim rounded-full h-3 overflow-hidden flex">
++<div class="bg-status-table-free h-full" style="width: 71%;"></div>
++<div class="bg-primary h-full" style="width: 29%;"></div>
++</div>
++<div class="flex justify-between font-label-sm text-label-sm text-on-surface-variant mt-1">
++<span>Lá»£i nhuáº­n gá»™p: 17.750Ä‘ / ly</span>
++<span>Cost ratio: 29%</span>
++</div>
++</div>
++</div>
++<!-- Quick Switch Selector -->
++<div class="pt-space-xs">
++<label class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider block mb-space-xs">Tra cá»©u cÃ´ng thá»©c mÃ³n khÃ¡c:</label>
++<div class="relative">
++<select class="w-full bg-surface-container py-space-sm px-space-md pr-10 rounded-xl font-title-md text-title-md text-espresso-deep appearance-none outline-none focus:bg-surface-container-high transition-all" id="select-recipe">
++<option selected="">CÃ  phÃª Phin Sá»¯a Cáº©m Lá»‡ (Best Seller)</option>
++<option>CÃ  phÃª Phin Äen ÄÃ¡</option>
++<option>Báº¡c Xá»‰u Sá»¯a TÆ°Æ¡i 3 Táº§ng</option>
++<option>TrÃ  Oolong Váº£i Háº¡t Sen</option>
++<option>CÃ  phÃª Muá»‘i Cáº©m Lá»‡ Äáº·c Biá»‡t</option>
++</select>
++<span class="material-symbols-outlined absolute right-3 top-2.5 text-on-surface-variant pointer-events-none">unfold_more</span>
++</div>
++</div>
++</div>
++</div>
++<!-- RIGHT / Master Raw Material Table & Controls (8 cols) -->
++<div class="xl:col-span-8 flex flex-col gap-space-md">
++<!-- Search, Filter & Quick Actions Bar -->
++<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-wrap items-center justify-between gap-space-sm">
++<div class="flex items-center gap-space-sm flex-1 min-w-[260px]">
++<div class="relative w-full">
++<span class="material-symbols-outlined absolute left-3 top-2.5 text-outline">search</span>
++<input class="w-full pl-10 pr-space-md py-space-sm bg-surface-container rounded-xl font-body-md text-body-md text-espresso-deep outline-none focus:bg-surface-container-high transition-all" id="inventory-search" placeholder="TÃ¬m theo mÃ£ NL, tÃªn nguyÃªn liá»‡u, nhÃ  cung cáº¥p..." type="text"/>
++</div>
++</div>
++<div class="flex items-center gap-space-xs">
++<button class="px-space-md py-space-sm rounded-xl bg-primary-container text-on-primary font-label-sm text-label-sm font-bold flex items-center gap-1 shadow-sm">
++<span>Táº¥t cáº£ NL</span>
++</button>
++<button class="px-space-md py-space-sm rounded-xl bg-surface-container text-on-surface-variant font-label-sm text-label-sm hover:bg-surface-container-high transition-colors">
++<span>CÃ  phÃª &amp; TrÃ </span>
++</button>
++<button class="px-space-md py-space-sm rounded-xl bg-surface-container text-on-surface-variant font-label-sm text-label-sm hover:bg-surface-container-high transition-colors">
++<span>Sá»¯a &amp; Kem BÃ©o</span>
++</button>
++<button class="px-space-md py-space-sm rounded-xl bg-surface-container text-on-surface-variant font-label-sm text-label-sm hover:bg-surface-container-high transition-colors">
++<span>Bao bÃ¬ &amp; Váº­t pháº©m</span>
++</button>
++</div>
++</div>
++<!-- Raw Materials Table Card -->
++<div class="bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden flex flex-col">
++<div class="px-space-lg py-space-md bg-surface-container-low flex items-center justify-between">
++<div class="flex items-center gap-space-sm">
++<span class="material-symbols-outlined text-primary">inventory_2</span>
++<span class="font-title-md text-title-md text-espresso-deep">Danh Má»¥c NguyÃªn Váº­t Liá»‡u Kho Ca SÃ¡ng</span>
++<span class="px-2 py-0.5 rounded-full bg-surface-container-highest font-label-sm text-label-sm text-on-surface-variant font-bold">12 máº·t hÃ ng</span>
++</div>
++<span class="font-label-sm text-label-sm text-on-surface-variant">Cáº­p nháº­t tá»± Ä‘á»™ng sau má»—i hÃ³a Ä‘Æ¡n</span>
++</div>
++<div class="overflow-x-auto">
++<table class="w-full text-left border-collapse">
++<thead>
++<tr class="bg-surface-container text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider">
++<th class="py-space-sm px-space-md">MÃ£ NL</th>
++<th class="py-space-sm px-space-md">TÃªn NguyÃªn Liá»‡u</th>
++<th class="py-space-sm px-space-md">ÄVT</th>
++<th class="py-space-sm px-space-md text-right">Tá»“n Hiá»‡n Táº¡i</th>
++<th class="py-space-sm px-space-md text-right">Tá»“n An ToÃ n</th>
++<th class="py-space-sm px-space-md text-right">GiÃ¡ Nháº­p BQ</th>
++<th class="py-space-sm px-space-md text-center">Tráº¡ng ThÃ¡i Kho</th>
++<th class="py-space-sm px-space-md text-right">Thao TÃ¡c</th>
++</tr>
++</thead>
++<tbody class="divide-y divide-surface-container font-body-md text-body-md text-espresso-deep" id="inventory-table-body">
++<!-- Item 1: Robusta (Warning) -->
++<tr class="hover:bg-surface-container-low/60 transition-colors">
++<td class="py-space-md px-space-md font-mono text-label-md text-outline">NL-001</td>
++<td class="py-space-md px-space-md">
++<div class="font-title-md text-title-md text-espresso-deep">Háº¡t Robusta Cáº©m Lá»‡ Rang Má»™c</div>
++<div class="font-body-sm text-body-sm text-on-surface-variant">XÆ°á»Ÿng rang HÃ²a XuÃ¢n - ÄÃ³ng gÃ³i van 1 chiá»u 1kg</div>
++</td>
++<td class="py-space-md px-space-md font-label-md text-label-md">kg</td>
++<td class="py-space-md px-space-md text-right font-title-md text-title-md text-status-table-pending font-bold">2.80</td>
++<td class="py-space-md px-space-md text-right text-on-surface-variant font-body-md">5.00</td>
++<td class="py-space-md px-space-md text-right font-body-md">170.000Ä‘</td>
++<td class="py-space-md px-space-md text-center">
++<span class="inline-flex items-center gap-1 px-space-sm py-1 rounded-full bg-status-table-pending/15 text-status-table-pending font-label-sm text-label-sm font-bold">
++<span class="material-symbols-outlined text-label-sm">warning</span> Cáº§n nháº­p thÃªm
++                  </span>
++</td>
++<td class="py-space-md px-space-md text-right">
++<button class="px-space-sm py-1 bg-surface-container hover:bg-surface-dim text-espresso-deep rounded-lg font-label-sm text-label-sm" onclick="openImportModal('NL-001', 'Háº¡t Robusta Cáº©m Lá»‡ Rang Má»™c', 10)">
++                    Nháº­p HÃ ng
++                  </button>
++</td>
++</tr>
++<!-- Item 2: Sua dac Ong Tho (Critical Red) -->
++<tr class="bg-error-container/10 hover:bg-error-container/20 transition-colors">
++<td class="py-space-md px-space-md font-mono text-label-md text-error">NL-002</td>
++<td class="py-space-md px-space-md">
++<div class="font-title-md text-title-md text-status-table-occupied font-bold">Sá»¯a Ä‘áº·c cÃ³ Ä‘Æ°á»ng Ã”ng Thá»</div>
++<div class="font-body-sm text-body-sm text-on-surface-variant">Lon thiáº¿c 380g nhÃ£n xanh</div>
++</td>
++<td class="py-space-md px-space-md font-label-md text-label-md">Há»™p</td>
++<td class="py-space-md px-space-md text-right font-title-lg text-title-lg text-status-table-occupied font-black">3.0</td>
++<td class="py-space-md px-space-md text-right text-on-surface-variant font-body-md">5.0</td>
++<td class="py-space-md px-space-md text-right font-body-md">22.800Ä‘</td>
++<td class="py-space-md px-space-md text-center">
++<span class="inline-flex items-center gap-1 px-space-sm py-1 rounded-full bg-error-container text-status-table-occupied font-label-sm text-label-sm font-bold animate-pulse">
++<span class="material-symbols-outlined text-label-sm">emergency</span> Cáº§n nháº­p gáº¥p!
++                  </span>
++</td>
++<td class="py-space-md px-space-md text-right">
++<button class="px-space-sm py-1 bg-status-table-occupied text-on-primary rounded-lg font-label-sm text-label-sm shadow-sm hover:opacity-90" onclick="openImportModal('NL-002', 'Sá»¯a Ä‘áº·c cÃ³ Ä‘Æ°á»ng Ã”ng Thá» 380g', 24)">
++                    Nháº­p Gáº¥p
++                  </button>
++</td>
++</tr>
++<!-- Item 3: Tra Oolong Moc Chau (Safe Green) -->
++<tr class="hover:bg-surface-container-low/60 transition-colors">
++<td class="py-space-md px-space-md font-mono text-label-md text-outline">NL-003</td>
++<td class="py-space-md px-space-md">
++<div class="font-title-md text-title-md text-espresso-deep">TrÃ  Oolong Má»™c ChÃ¢u ThÆ°á»£ng Háº¡ng</div>
++<div class="font-body-sm text-body-sm text-on-surface-variant">BÃºp sáº¥y láº¡nh tÃºi nhÃ´m 500g</div>
++</td>
++<td class="py-space-md px-space-md font-label-md text-label-md">kg</td>
++<td class="py-space-md px-space-md text-right font-title-md text-title-md text-espresso-deep font-bold">8.50</td>
++<td class="py-space-md px-space-md text-right text-on-surface-variant font-body-md">3.00</td>
++<td class="py-space-md px-space-md text-right font-body-md">280.000Ä‘</td>
++<td class="py-space-md px-space-md text-center">
++<span class="inline-flex items-center gap-1 px-space-sm py-1 rounded-full bg-status-table-free/15 text-status-table-free font-label-sm text-label-sm font-bold">
++<span class="material-symbols-outlined text-label-sm">check_circle</span> BÃ¬nh thÆ°á»ng
++                  </span>
++</td>
++<td class="py-space-md px-space-md text-right">
++<button class="px-space-sm py-1 bg-surface-container hover:bg-surface-dim text-espresso-deep rounded-lg font-label-sm text-label-sm" onclick="openImportModal('NL-003', 'TrÃ  Oolong Má»™c ChÃ¢u', 5)">
++                    Nháº­p HÃ ng
++                  </button>
++</td>
++</tr>
++<!-- Item 4: Kem beo Rich's (Safe Green) -->
++<tr class="hover:bg-surface-container-low/60 transition-colors">
++<td class="py-space-md px-space-md font-mono text-label-md text-outline">NL-004</td>
++<td class="py-space-md px-space-md">
++<div class="font-title-md text-title-md text-espresso-deep">Kem BÃ©o Thá»±c Váº­t Rich's Non-Dairy</div>
++<div class="font-body-sm text-body-sm text-on-surface-variant">Há»™p 454g báº£o quáº£n Ä‘Ã´ng sÃ¢u</div>
++</td>
++<td class="py-space-md px-space-md font-label-md text-label-md">Há»™p</td>
++<td class="py-space-md px-space-md text-right font-title-md text-title-md text-espresso-deep font-bold">12.0</td>
++<td class="py-space-md px-space-md text-right text-on-surface-variant font-body-md">6.0</td>
++<td class="py-space-md px-space-md text-right font-body-md">31.500Ä‘</td>
++<td class="py-space-md px-space-md text-center">
++<span class="inline-flex items-center gap-1 px-space-sm py-1 rounded-full bg-status-table-free/15 text-status-table-free font-label-sm text-label-sm font-bold">
++<span class="material-symbols-outlined text-label-sm">check_circle</span> BÃ¬nh thÆ°á»ng
++                  </span>
++</td>
++<td class="py-space-md px-space-md text-right">
++<button class="px-space-sm py-1 bg-surface-container hover:bg-surface-dim text-espresso-deep rounded-lg font-label-sm text-label-sm" onclick="openImportModal('NL-004', 'Kem BÃ©o Rich', 12)">
++                    Nháº­p HÃ ng
++                  </button>
++</td>
++</tr>
++<!-- Item 5: Ly giay mang ve (Normal) -->
++<tr class="hover:bg-surface-container-low/60 transition-colors">
++<td class="py-space-md px-space-md font-mono text-label-md text-outline">NL-005</td>
++<td class="py-space-md px-space-md">
++<div class="font-title-md text-title-md text-espresso-deep">Ly Giáº¥y In Logo Cáº©m Lá»‡ 360ml + Náº¯p KhÃ³a</div>
++<div class="font-body-sm text-body-sm text-on-surface-variant">CÃ¢y 50 cÃ¡i bá»c mÃ ng co PE</div>
++</td>
++<td class="py-space-md px-space-md font-label-md text-label-md">Bá»™</td>
++<td class="py-space-md px-space-md text-right font-title-md text-title-md text-espresso-deep font-bold">420</td>
++<td class="py-space-md px-space-md text-right text-on-surface-variant font-body-md">150</td>
++<td class="py-space-md px-space-md text-right font-body-md">1.200Ä‘</td>
++<td class="py-space-md px-space-md text-center">
++<span class="inline-flex items-center gap-1 px-space-sm py-1 rounded-full bg-status-table-free/15 text-status-table-free font-label-sm text-label-sm font-bold">
++<span class="material-symbols-outlined text-label-sm">check_circle</span> BÃ¬nh thÆ°á»ng
++                  </span>
++</td>
++<td class="py-space-md px-space-md text-right">
++<button class="px-space-sm py-1 bg-surface-container hover:bg-surface-dim text-espresso-deep rounded-lg font-label-sm text-label-sm" onclick="openImportModal('NL-005', 'Ly Giáº¥y Mang Vá»', 500)">
++                    Nháº­p HÃ ng
++                  </button>
++</td>
++</tr>
++<!-- Item 6: Sá»¯a tÆ°Æ¡i thanh trÃ¹ng DalatMilk (Normal) -->
++<tr class="hover:bg-surface-container-low/60 transition-colors">
++<td class="py-space-md px-space-md font-mono text-label-md text-outline">NL-006</td>
++<td class="py-space-md px-space-md">
++<div class="font-title-md text-title-md text-espresso-deep">Sá»¯a TÆ°Æ¡i Thanh TrÃ¹ng DalatMilk KhÃ´ng ÄÆ°á»ng</div>
++<div class="font-body-sm text-body-sm text-on-surface-variant">Can 950ml báº£o quáº£n mÃ¡t 2-4Â°C</div>
++</td>
++<td class="py-space-md px-space-md font-label-md text-label-md">Chai</td>
++<td class="py-space-md px-space-md text-right font-title-md text-title-md text-espresso-deep font-bold">14.0</td>
++<td class="py-space-md px-space-md text-right text-on-surface-variant font-body-md">8.0</td>
++<td class="py-space-md px-space-md text-right font-body-md">34.000Ä‘</td>
++<td class="py-space-md px-space-md text-center">
++<span class="inline-flex items-center gap-1 px-space-sm py-1 rounded-full bg-status-table-free/15 text-status-table-free font-label-sm text-label-sm font-bold">
++<span class="material-symbols-outlined text-label-sm">check_circle</span> BÃ¬nh thÆ°á»ng
++                  </span>
++</td>
++<td class="py-space-md px-space-md text-right">
++<button class="px-space-sm py-1 bg-surface-container hover:bg-surface-dim text-espresso-deep rounded-lg font-label-sm text-label-sm" onclick="openImportModal('NL-006', 'Sá»¯a TÆ°Æ¡i DalatMilk', 10)">
++                    Nháº­p HÃ ng
++                  </button>
++</td>
++</tr>
++</tbody>
++</table>
++</div>
++<div class="p-space-md bg-surface-container-lowest flex items-center justify-between text-on-surface-variant font-body-sm text-body-sm">
++<span>Hiá»ƒn thá»‹ 6 / 12 nguyÃªn váº­t liá»‡u chÃ­nh</span>
++<div class="flex items-center gap-space-xs">
++<span class="w-2 h-2 rounded-full bg-status-table-free"></span>
++<span>Kháº¥u trá»« Ä‘á»‹nh má»©c tá»± Ä‘á»™ng: KÃ­ch hoáº¡t</span>
++</div>
++</div>
++</div>
++</div>
++</div>
++<!-- Part 3: Operational Section: Stock Inward (Phiáº¿u Nháº­p) vs End-of-Shift Variance Reconciliation (Kiá»ƒm KÃª Hao Há»¥t) -->
++<div class="grid grid-cols-1 xl:grid-cols-12 gap-space-lg mt-space-sm">
++<!-- Phiáº¿u Táº¡o Nháº­p Kho Nhanh (5 cols) -->
++<div class="xl:col-span-5 bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col gap-space-md">
++<div class="flex items-center justify-between">
++<div class="flex items-center gap-space-xs">
++<span class="material-symbols-outlined text-secondary">add_circle</span>
++<h3 class="font-headline-sm text-headline-sm text-espresso-deep">Phiáº¿u Táº¡o ÄÆ¡n Nháº­p Kho</h3>
++</div>
++<span class="font-label-sm text-label-sm text-on-surface-variant font-mono">PNK-202410-08</span>
++</div>
++<p class="font-body-sm text-body-sm text-on-surface-variant">Nháº­p bá»• sung lÆ°á»£ng tá»“n kho thiáº¿u há»¥t tá»« nhÃ  cung á»©ng nÃ´ng sáº£n &amp; sá»¯a Ä‘á»‹a phÆ°Æ¡ng.</p>
++<form class="flex flex-col gap-space-sm" id="form-stock-in" onsubmit="event.preventDefault(); submitStockIn();">
++<div>
++<label class="font-label-sm text-label-sm text-espresso-deep font-bold block mb-1">NguyÃªn Liá»‡u Cáº§n Nháº­p</label>
++<div class="relative">
++<select class="w-full bg-surface-container py-space-sm px-space-md rounded-xl font-title-md text-title-md text-espresso-deep appearance-none outline-none focus:bg-surface-container-high transition-all" id="po-material-select">
++<option value="NL-002">NL-002 - Sá»¯a Ä‘áº·c Ã”ng Thá» (Há»™p) - Tá»“n 3 / Äá» xuáº¥t +24</option>
++<option value="NL-001">NL-001 - Háº¡t Robusta Cáº©m Lá»‡ Rang Má»™c (kg) - Tá»“n 2.8 / Äá» xuáº¥t +10</option>
++<option value="NL-003">NL-003 - TrÃ  Oolong Má»™c ChÃ¢u (kg) - Tá»“n 8.5</option>
++<option value="NL-004">NL-004 - Kem BÃ©o Thá»±c Váº­t Rich's (Há»™p)</option>
++<option value="NL-005">NL-005 - Ly Giáº¥y Mang Vá» Cáº©m Lá»‡ (Bá»™)</option>
++</select>
++<span class="material-symbols-outlined absolute right-3 top-2.5 text-on-surface-variant pointer-events-none">unfold_more</span>
++</div>
++</div>
++<div class="grid grid-cols-2 gap-space-sm">
++<div>
++<label class="font-label-sm text-label-sm text-espresso-deep font-bold block mb-1">Sá»‘ LÆ°á»£ng Nháº­p</label>
++<input class="w-full bg-surface-container py-space-sm px-space-md rounded-xl font-title-md text-title-md text-espresso-deep outline-none focus:bg-surface-container-high transition-all" id="po-qty" min="1" type="number" value="24"/>
++</div>
++<div>
++<label class="font-label-sm text-label-sm text-espresso-deep font-bold block mb-1">ÄÆ¡n GiÃ¡ Nháº­p (VND)</label>
++<input class="w-full bg-surface-container py-space-sm px-space-md rounded-xl font-title-md text-title-md text-espresso-deep outline-none focus:bg-surface-container-high transition-all" id="po-unit-price" step="500" type="number" value="22800"/>
++</div>
++</div>
++<div>
++<label class="font-label-sm text-label-sm text-espresso-deep font-bold block mb-1">NhÃ  Cung Cáº¥p / Äáº§u Má»‘i Giao HÃ ng</label>
++<div class="relative">
++<select class="w-full bg-surface-container py-space-sm px-space-md rounded-xl font-body-md text-body-md text-espresso-deep appearance-none outline-none focus:bg-surface-container-high transition-all">
++<option>Äáº¡i lÃ½ Sá»¯a &amp; BÆ¡ ÄÃ  Náºµng (HÃ²a CÆ°á»ng Nam)</option>
++<option>XÆ°á»Ÿng rang CÃ  phÃª Cáº©m Lá»‡ Má»™c Gia</option>
++<option>CÃ´ng ty Bao BÃ¬ Xanh Miá»n Trung</option>
++</select>
++<span class="material-symbols-outlined absolute right-3 top-2.5 text-on-surface-variant pointer-events-none">expand_more</span>
++</div>
++</div>
++<div class="p-space-sm bg-surface-container-low rounded-xl flex items-center justify-between">
++<span class="font-body-md text-body-md text-on-surface-variant">Tá»•ng giÃ¡ trá»‹ thanh toÃ¡n táº¡m tÃ­nh:</span>
++<span class="font-title-lg text-title-lg text-secondary font-bold" id="po-total-preview">547.200Ä‘</span>
++</div>
++<button class="w-full py-space-sm px-space-md bg-secondary text-on-secondary rounded-xl font-title-md text-title-md shadow-md hover:bg-on-secondary-container transition-all flex items-center justify-center gap-space-xs mt-space-xs" type="submit">
++<span class="material-symbols-outlined text-title-md">check_circle</span>
++          Duyá»‡t &amp; Nháº­p Kho Tá»©c ThÃ¬
++        </button>
++</form>
++</div>
++<!-- Kiá»ƒm KÃª Hao Há»¥t Cuá»‘i NgÃ y (7 cols) -->
++<div class="xl:col-span-7 bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col justify-between gap-space-md">
++<div class="flex flex-col gap-space-xs">
++<div class="flex items-center justify-between">
++<div class="flex items-center gap-space-xs">
++<span class="material-symbols-outlined text-status-table-pending">tune</span>
++<h3 class="font-headline-sm text-headline-sm text-espresso-deep">Kiá»ƒm KÃª &amp; Äá»‘i SoÃ¡t Hao Há»¥t Cuá»‘i Ca</h3>
++</div>
++<span class="px-space-sm py-1 bg-surface-container rounded-lg font-label-sm text-label-sm text-on-surface-variant">Ca 1 â€¢ 06:30 - 14:00</span>
++</div>
++<p class="font-body-sm text-body-sm text-on-surface-variant">So khá»›p sá»‘ lÆ°á»£ng nguyÃªn váº­t liá»‡u cÃ¢n thá»±c táº¿ táº¡i quáº§y bar vá»›i lÆ°á»£ng trá»« kho há»‡ thá»‘ng theo cÃ´ng thá»©c Recipe.</p>
++</div>
++<!-- Variance Table -->
++<div class="overflow-x-auto">
++<table class="w-full text-left border-collapse">
++<thead>
++<tr class="bg-surface-container text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider">
++<th class="py-space-xs px-space-sm">NguyÃªn Liá»‡u</th>
++<th class="py-space-xs px-space-sm text-right">LÃ½ Thuyáº¿t (POS)</th>
++<th class="py-space-xs px-space-sm text-right">Thá»±c Táº¿ CÃ¢n/Äáº¿m</th>
++<th class="py-space-xs px-space-sm text-right">ChÃªnh Lá»‡ch</th>
++<th class="py-space-xs px-space-sm">NguyÃªn NhÃ¢n Hao Há»¥t</th>
++</tr>
++</thead>
++<tbody class="divide-y divide-surface-container font-body-sm text-body-sm">
++<!-- Row 1: Robusta slight loss -->
++<tr>
++<td class="py-space-sm px-space-sm">
++<div class="font-title-md text-title-md text-espresso-deep">Robusta Cáº©m Lá»‡</div>
++<div class="font-label-sm text-label-sm text-outline">ÄVT: gram (g)</div>
++</td>
++<td class="py-space-sm px-space-sm text-right font-mono text-espresso-deep">2.800g</td>
++<td class="py-space-sm px-space-sm text-right">
++<input class="w-24 text-right bg-surface-container py-1 px-2 rounded-lg font-title-md text-title-md text-espresso-deep outline-none focus:bg-surface-container-high" id="actual-robusta" type="number" value="2740"/>
++</td>
++<td class="py-space-sm px-space-sm text-right font-title-md text-title-md text-error font-bold">-60g</td>
++<td class="py-space-sm px-space-sm">
++<span class="text-on-surface-variant text-body-sm">RÆ¡i vÃ£i cá»‘i xay &amp; xáº£ bÃ£ phin</span>
++</td>
++</tr>
++<!-- Row 2: Sua dac matches exactly -->
++<tr>
++<td class="py-space-sm px-space-sm">
++<div class="font-title-md text-title-md text-espresso-deep">Sá»¯a Ä‘áº·c Ã”ng Thá»</div>
++<div class="font-label-sm text-label-sm text-outline">ÄVT: Há»™p 380g</div>
++</td>
++<td class="py-space-sm px-space-sm text-right font-mono text-espresso-deep">3.0 há»™p</td>
++<td class="py-space-sm px-space-sm text-right">
++<input class="w-24 text-right bg-surface-container py-1 px-2 rounded-lg font-title-md text-title-md text-espresso-deep outline-none focus:bg-surface-container-high" id="actual-milk" step="0.5" type="number" value="3.0"/>
++</td>
++<td class="py-space-sm px-space-sm text-right font-title-md text-title-md text-status-table-free font-bold">0.0</td>
++<td class="py-space-sm px-space-sm">
++<span class="text-status-table-free text-body-sm font-semibold">Khá»›p 100% chuáº©n</span>
++</td>
++</tr>
++<!-- Row 3: Ly mang ve -->
++<tr>
++<td class="py-space-sm px-space-sm">
++<div class="font-title-md text-title-md text-espresso-deep">Ly giáº¥y mang vá»</div>
++<div class="font-label-sm text-label-sm text-outline">ÄVT: CÃ¡i</div>
++</td>
++<td class="py-space-sm px-space-sm text-right font-mono text-espresso-deep">420 cÃ¡i</td>
++<td class="py-space-sm px-space-sm text-right">
++<input class="w-24 text-right bg-surface-container py-1 px-2 rounded-lg font-title-md text-title-md text-espresso-deep outline-none focus:bg-surface-container-high" id="actual-cups" type="number" value="418"/>
++</td>
++<td class="py-space-sm px-space-sm text-right font-title-md text-title-md text-error font-bold">-2 cÃ¡i</td>
++<td class="py-space-sm px-space-sm">
++<span class="text-on-surface-variant text-body-sm">HÆ° náº¯p gáº­p &amp; Ä‘á»• thá»­ mÃ³n</span>
++</td>
++</tr>
++</tbody>
++</table>
++</div>
++<!-- Variance Summary & Close Out Shift Bar -->
++<div class="p-space-md bg-surface-container-low rounded-xl flex flex-wrap items-center justify-between gap-space-sm">
++<div class="flex items-center gap-space-sm">
++<span class="material-symbols-outlined text-secondary">analytics</span>
++<div class="flex flex-col">
++<span class="font-label-sm text-label-sm text-on-surface-variant">Tá»•ng chi phÃ­ hao há»¥t ghi nháº­n:</span>
++<span class="font-title-lg text-title-lg text-espresso-deep font-bold">12.600Ä‘ (0.28% doanh thu ca)</span>
++</div>
++</div>
++<div class="flex items-center gap-space-xs">
++<button class="px-space-md py-space-sm bg-surface-container hover:bg-surface-dim text-espresso-deep rounded-xl font-label-lg text-label-lg transition-colors" onclick="recalculateVariance()">
++            CÃ¢n Báº±ng Láº¡i
++          </button>
++<button class="px-space-md py-space-sm bg-primary text-on-primary rounded-xl font-label-lg text-label-lg shadow-md hover:bg-primary-container transition-all flex items-center gap-1" onclick="confirmShiftAudit()">
++<span class="material-symbols-outlined text-title-md">done_all</span>
++            Chá»‘t &amp; KÃ½ BiÃªn Báº£n Ca
++          </button>
++</div>
++</div>
++</div>
++</div>
++<!-- Quick Floating Notification Toast / Action Feedback -->
++<div class="fixed bottom-6 right-6 hidden transform transition-all duration-300 z-50" id="toast-notification">
++<div class="bg-espresso-deep text-on-primary px-space-lg py-space-md rounded-xl shadow-xl flex items-center gap-space-sm">
++<span class="material-symbols-outlined text-status-table-free">check_circle</span>
++<div class="flex flex-col">
++<span class="font-title-md text-title-md" id="toast-title">ThÃ nh cÃ´ng!</span>
++<span class="font-body-sm text-body-sm text-primary-fixed-dim" id="toast-msg">ÄÃ£ láº­p phiáº¿u nháº­p kho bá»• sung cho ca sÃ¡ng.</span>
++</div>
++</div>
++</div>
++</div>
++<script>
++  // Dynamic quick calculation for PO creation
++  const qtyInput = document.getElementById('po-qty');
++  const priceInput = document.getElementById('po-unit-price');
++  const totalPreview = document.getElementById('po-total-preview');
++  const materialSelect = document.getElementById('po-material-select');
++
++  function updatePOTotal() {
++    if (!qtyInput || !priceInput || !totalPreview) return;
++    const qty = parseFloat(qtyInput.value) || 0;
++    const price = parseFloat(priceInput.value) || 0;
++    const total = qty * price;
++    totalPreview.textContent = total.toLocaleString('vi-VN') + 'Ä‘';
++  }
++
++  if (qtyInput) qtyInput.addEventListener('input', updatePOTotal);
++  if (priceInput) priceInput.addEventListener('input', updatePOTotal);
++
++  function openImportModal(code, name, defaultQty) {
++    if (materialSelect) {
++      let optionFound = false;
++      for (let i = 0; i < materialSelect.options.length; i++) {
++        if (materialSelect.options[i].value === code) {
++          materialSelect.selectedIndex = i;
++          optionFound = true;
++          break;
++        }
++      }
++      if (!optionFound) {
++        materialSelect.options[0].text = code + ' - ' + name;
++        materialSelect.selectedIndex = 0;
++      }
++    }
++    if (qtyInput) qtyInput.value = defaultQty;
++    if (code === 'NL-002') {
++      if (priceInput) priceInput.value = 22800;
++    } else if (code === 'NL-001') {
++      if (priceInput) priceInput.value = 170000;
++    } else {
++      if (priceInput) priceInput.value = 35000;
++    }
++    updatePOTotal();
++    
++    // Smooth scroll down to stock in form
++    const stockForm = document.getElementById('form-stock-in');
++    if (stockForm) {
++      stockForm.scrollIntoView({ behavior: 'smooth', block: 'center' });
++      stockForm.classList.add('ring-2', 'ring-secondary');
++      setTimeout(() => {
++        stockForm.classList.remove('ring-2', 'ring-secondary');
++      }, 1200);
++    }
++  }
++
++  function showToast(title, msg) {
++    const toast = document.getElementById('toast-notification');
++    const toastTitle = document.getElementById('toast-title');
++    const toastMsg = document.getElementById('toast-msg');
++    if (toast && toastTitle && toastMsg) {
++      toastTitle.textContent = title;
++      toastMsg.textContent = msg;
++      toast.classList.remove('hidden');
++      setTimeout(() => {
++        toast.classList.add('hidden');
++      }, 4000);
++    }
++  }
++
++  function submitStockIn() {
++    const selectedMat = materialSelect ? materialSelect.options[materialSelect.selectedIndex].text : 'NguyÃªn liá»‡u';
++    const qty = qtyInput ? qtyInput.value : 0;
++    showToast('ÄÃ£ Nháº­p Kho ThÃ nh CÃ´ng!', `ÄÃ£ cá»™ng thÃªm +${qty} Ä‘Æ¡n vá»‹ cho máº·t hÃ ng: ${selectedMat.split('-')[1] || selectedMat}`);
++  }
++
++  function recalculateVariance() {
++    showToast('ÄÃ£ Äá»‘i SoÃ¡t Dá»¯ Liá»‡u!', 'Há»‡ thá»‘ng Ä‘Ã£ cáº­p nháº­t tá»· lá»‡ hao há»¥t pha cháº¿ theo khá»‘i lÆ°á»£ng vá»«a cÃ¢n.');
++  }
++
++  function confirmShiftAudit() {
++    showToast('ÄÃ£ Chá»‘t BiÃªn Báº£n Ca!', 'BiÃªn báº£n kiá»ƒm kÃª hao há»¥t Ä‘Ã£ lÆ°u vÃ  gá»­i Ä‘áº¿n quáº£n trá»‹ viÃªn chi nhÃ¡nh Cáº©m Lá»‡.');
++  }
++
++  // Interactive Recipe Selector
++  const recipeSelector = document.getElementById('select-recipe');
++  if (recipeSelector) {
++    recipeSelector.addEventListener('change', function(e) {
++      showToast('ÄÃ£ táº£i cÃ´ng thá»©c!', 'Hiá»ƒn thá»‹ chi tiáº¿t BOM vÃ  biÃªn lá»£i nhuáº­n cho: ' + e.target.value);
++    });
++  }
++
++  // Inventory Table search filtering
++  const searchInput = document.getElementById('inventory-search');
++  if (searchInput) {
++    searchInput.addEventListener('input', function(e) {
++      const query = e.target.value.toLowerCase();
++      const rows = document.querySelectorAll('#inventory-table-body tr');
++      rows.forEach(row => {
++        const text = row.textContent.toLowerCase();
++        row.style.display = text.includes(query) ? '' : 'none';
++      });
++    });
++  }
++</script></main></div></body></html>
+\ No newline at end of file
+
